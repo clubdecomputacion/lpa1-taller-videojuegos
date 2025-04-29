@@ -7,7 +7,8 @@
 
 ## Autor
 
-- [@estudiante](https://www.github.com/estudiante)
+- 🤝 [@cristian1231a](https://github.com/cristian1231a)
+- 🤝 [@DanielAngul0](https://github.com/DanielAngul0) 
 
 ## Descripción del Proyecto
 
@@ -103,38 +104,79 @@ El proyecto se dividirá en varias fases, comenzando con la creación de clases 
 - Tesoros: Deben tener diferentes objetos valiosos que se traduzcan en dinero para el personaje al venderlos.
 - Armamento/Defensa: El personaje debe poder comprar/vender para mejorar su ataque/defensa.
 
+---
+
 ## Diseño
 
-![Diagrama de Clases](./docs/diagramas.png)
+![Diagrama de Clases](./docs/Diagrama_de_clases_UML.png)
 
-## Instalación
+---
 
-1. Clonar el proyecto
+## 🛠️ Instalación
 
+1. Clona el repositorio:
 ```bash
-git clone https://github.com/UR-CC/lpa1-taller-videojuegos.git
+git clone https://github.com/cristian1231a/lpa1-taller-videojuegos.git
 cd lpa1-taller-videojuegos
 ```
+2. Instalar requisitos⚙️
 
-2. Crear y activar entorno virtual
-
+- Python 3.8+
+- Dependencias:
 ```bash
-python -m venv venv
-venv/bin/activate
-```
-
-3. Instalar librerías y dependencias
-
-```bash
+# Dependencias principales
+# pygame => Motor de desarrollo de videojuegos
 pip install -r requirements.txt
 ```
-    
-## Ejecución
+---
 
-1. Ejecutar el proyecto
+## 🖥️ Ejecución
 
+Para ejecutar la aplicación, simplemente ejecuta:
+
+1. Ejecutar el proyecto⚙️
 ```bash
-cd lpa1-taller-videojuegos
 python main.py
 ```
+---
+## 🎮 Controles
 
+### Teclado
+Tecla | Acción
+---|---
+⬆️ *Flecha Arriba* | Salto (¡Inmunidad mientras estás en el aire! 🛡️)
+⬅️ *Flecha Izquierda* | Movimiento hacia la izquierda
+➡️ *Flecha Derecha* | Movimiento hacia la derecha
+*Z* | Modo Defensa (Bloqueo de daño) 🛡️
+*Espacio* | Ataque Básico ⚔️
+*X* | Abrir/Cerrar Tienda ⏸️🛒 (Pausa el juego)
+
+### Ratón
+Acción | Función
+---|---
+🖱️ *Clic Izquierdo* | Vender items del inventario/Comprar ítems en la Tienda ✅
+
+### Inventario 🎒
+Slot | Tecla | Función
+---|---|---
+1 | *1* | Primer ítem del inventario
+2 | *2* | Segundo ítem del inventario
+3 | *3* | Tercer ítem del inventario
+4 | *4* | Cuarto ítem del inventario
+
+> 💡 Notas importantes:  
+> - Defenderse *(Z)* Reduce el daño recibido *a la mitad* mientras bloqueas 🛡️
+> - Al abrir la tienda (*X*) el juego se pausa automáticamente ⏸️  
+> - Los ítems de la tienda solo son interactuables con el ratón 🖱️  
+> - Para vender "Muslos de Pollo" debes abrir la tienda y posteriormente darle doble click izquierdo al slot del inventario donde este se encuentre 🖱️ 
+> - ¡El salto (⬆️) te da inmunidad temporal contra ataques! 🛡️
+> - El inventario tiene 4 slots accesibles con las teclas *1-4* (parte superior del teclado) 🔢  
+> - Los ítems se usan instantáneamente al presionar su tecla numérica correspondiente ⚡  
+> - Hay probabilidad que al matar a un Zombi recibas como recompensa una bomba💣 si la ves, ¡corre! si estas en su campo de explosion💥 quedaras aturdido por unos segundos y recibiras mucho daño
+> - Hay probabilidad que al matar a un Zombi recibas como recompensa un cofre el cual se guardara automaticamente en tu inventario, usalo para obtener grandes ganancias de Monedas Ninja💰
+> - Hay probabilidad que al matar a un Zombi recibas como recompensa un Muslo de Pollo🍗 recolectalo y este se guardara en tu inventario si tienes slots disponibles, si lo usas obtendras recuperacion de vida❤️
+> - ¡Recoge objetos derrotando enemigos para llenar tu inventario! 🧳
+> - ¡La horda de Zombis se hara mas fuertes a medida que tus estadisticas aumentan!☠️ Procura comprar mejoras para poder hacerles frente🗡️🔥
+> - ✨ ¡Derrotar a cada Zombi te dara 20 puntos ninja, por lo que podras obtener la victoria si derrotas a toda la horda de Zombi y alcanzas 400 de puntuacion!
+> - ✨ ¡Puedes obtener la victoria derrotas al Zombi Jefe!
+> - ✨ ¡Puedes obtener la victoria si pasas por los 3 niveles existentes para escapar de la horda de Zombis!
